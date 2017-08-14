@@ -12,10 +12,10 @@ var runeGame = {
     },
     gameStart: function() {
         this.currentScore = 0;
-        this.targetScore = (Math.floor(Math.random() * 101) + 19);
+        this.targetScore = (Math.floor(Math.random() * 102) + 19);
         this.runeVal = [];
         for(i = 0; i < 4; i++){
-            this.runeVal[i] = (Math.floor(Math.random() * 11) + 1);
+            this.runeVal[i] = (Math.floor(Math.random() * 12) + 1);
         }
         this.scoreUpdate();
     },
@@ -35,7 +35,7 @@ var runeGame = {
     },
 };
 $(document).ready(function() {   
-    runeGame.gameStart()
+    runeGame.gameStart();
     $(".btn-default").on("click", function() {
         runeGame.gameLogic(this.value);
     });
