@@ -1,3 +1,11 @@
-.testclass {
-    background-color: gray;
+.rune-img-border {
+    border: 3px black solid
+}
+#score-row {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 3px black solid;
+}
+.float-right-helper {
+    float:right;
 }
