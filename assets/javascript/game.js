@@ -36,7 +36,7 @@ var runeGame = {
 };
 $(document).ready(function() {   
     runeGame.gameStart();
-    $(".btn-default").on("focus", function() {
+    $(".btn-default").on("click touchstart", function() {
         runeGame.gameLogic(this.value);
     });
 });
